@@ -21,7 +21,7 @@ class Fluent::KubernetesOutput < Fluent::Output
 
   config_param :container_id, :string
   config_param :tag, :string
-  config_param :kubernetes_pod_regex, :string, default: '^[^_]+_([^\.]+)\.[^_]+_([^\.]+)\.([^\.]+)'
+  config_param :kubernetes_pod_regex, :string, default: '^[^_]+_([^\.]+)\.[^_]+_([^_]+)+_([^_]+)'
 
   def initialize
     super
