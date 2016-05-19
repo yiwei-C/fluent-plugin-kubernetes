@@ -4,12 +4,13 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 
 Gem::Specification.new do |spec|
   spec.name          = "fluent-plugin-kubernetes"
-  spec.version       = "0.3.1"
+  spec.version       = "0.0.1"
   spec.authors       = ["Jimmi Dyson"]
-  spec.email         = ["jimmidyson@gmail.com"]
+  spec.contributor   = ["Yiwei Chen"]
+  spec.email         = ["yiwei.chen@pearson.com"]
   spec.description   = %q{Output filter plugin to add Kubernetes metadata}
   spec.summary       = %q{Output filter plugin to add Kubernetes metadata}
-  spec.homepage      = "https://github.com/fabric8io/fluent-plugin-kubernetes"
+  spec.homepage      = "https://github.com/ywchenbu/fluent-plugin-kubernetes"
   spec.license       = "ASL2"
 
   spec.files         = `git ls-files`.split($/)
